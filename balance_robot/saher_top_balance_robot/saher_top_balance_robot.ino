@@ -38,7 +38,8 @@ volatile bool mpuInterrupt = false;
 // --------- PID ---------
 double input, output;
 double setpoint = 180.0;
-double Kp = 35.0, Ki = 0.0, Kd = 1.5;
+double Kp = 35.0, Ki = 0.0
+, Kd = 1.5;
 PID pid(&input, &output, &setpoint, Kp, Ki, Kd, DIRECT);
 double fallLimit = 25.0;
 
